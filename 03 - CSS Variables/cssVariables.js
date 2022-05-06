@@ -2,7 +2,7 @@
     const inputs = document.querySelectorAll('input');
 
     inputs.forEach(input => input.addEventListener('change', handleUpdate));
-    inputs.forEach(input => input.addEventListener('mouseover', handleUpdate));
+    inputs.forEach(input => input.addEventListener('mousemove', handleUpdate));
     
     function handleUpdate() {
         const suffix = this.dataset.sizing || '';
